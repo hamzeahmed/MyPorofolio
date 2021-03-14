@@ -6,4 +6,5 @@
   <p><%= items.body%></p>
   <p><%= image_tag items.thumb_image unless items.thumb_image.nil?%></p>
   <%= link_to 'edit portofolio', edit_portofolio_path(items) %>
+  <%= link_to 'Delete Porofolio', portofolio_path(items), method: :delete, data:{confirm: 'Are you sure?' }%>
 <% end %>
