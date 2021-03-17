@@ -3,4 +3,5 @@ class Blog < ApplicationRecord
   extend FriendlyId
   friendly_id :titile, use: :slugged
   validates :titile,:body, presence: true
+  belongs_to :topic
 end

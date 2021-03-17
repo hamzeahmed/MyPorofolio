@@ -1,6 +1,7 @@
 10.times do |blogs|
   Blog.create!(
     titile: "My Blog #{blogs+1}",
+    topic_id: 1,
     body:"Lorem Ipsum is simply dummy text of
     the printing and typesetting industry.
     Lorem Ipsum has been the industry's standard
