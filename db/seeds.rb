@@ -44,8 +44,8 @@ puts "5 Skills Created"
           sheets containing Lorem Ipsum passages, and more recently
           with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.",
-      main_image: "https://via.placeholder.com/150",
-      thumb_image: "https://via.placeholder.com/150"
+      main_image: "https://via.placeholder.com/600x400",
+      thumb_image: "https://via.placeholder.com/350x200"
 
   )
 end
@@ -62,8 +62,8 @@ puts "8 portofolios items created"
           sheets containing Lorem Ipsum passages, and more recently
           with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.",
-      main_image: "https://via.placeholder.com/150",
-      thumb_image: "https://via.placeholder.com/150"
+          main_image: "https://via.placeholder.com/600x400",
+          thumb_image: "https://via.placeholder.com/350x200"
 
   )
 end
