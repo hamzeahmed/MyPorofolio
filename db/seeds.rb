@@ -1,3 +1,10 @@
+3.times do |topic|
+  Topic.create!(
+    title: "#{topic+1}"
+  )
+end
+puts "3 Topics Created"
+
 10.times do |blogs|
   Blog.create!(
     titile: "My Blog #{blogs+1}",
@@ -26,10 +33,10 @@ puts "10 Blogs created"
 end
 puts "5 Skills Created"
 
-9.times do |portofolios_items|
+8.times do |portofolios_items|
   Portofolio.create!(
     title:"Potofolio title #{portofolios_items}",
-    sub_title:"Subtitle #{portofolios_items}",
+    sub_title:"Ruby On Rails ",
     body: "a type specimen book. It has survived not only five
           centuries, but also the leap into electronic typesetting,
           remaining essentially unchanged.
@@ -39,6 +46,24 @@ puts "5 Skills Created"
           including versions of Lorem Ipsum.",
       main_image: "https://via.placeholder.com/150",
       thumb_image: "https://via.placeholder.com/150"
+
   )
 end
-puts "9 portofolios items created"
+puts "8 portofolios items created"
+
+1.times do |portofolios_items|
+  Portofolio.create!(
+    title:"Potofolio title #{portofolios_items}",
+    sub_title:"Angular",
+    body: "a type specimen book. It has survived not only five
+          centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged.
+          It was popularised in the 1960s with the release of Letraset
+          sheets containing Lorem Ipsum passages, and more recently
+          with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.",
+      main_image: "https://via.placeholder.com/150",
+      thumb_image: "https://via.placeholder.com/150"
+
+  )
+end
