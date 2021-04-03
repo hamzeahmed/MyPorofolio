@@ -1,21 +1,2 @@
 <h2>Editing Portofolio</h2>
-<%= form_with(model: @portofolio_item) do |form| %>
-
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
-
-  <div class="field">
-    <%= form.label :sub_title%>
-    <%= form.text_field :sub_title %>
-  </div>
-  <div class="field">
-    <%= form.label :body%>
-    <%= form.text_area :body %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+<%= render 'form', portofolio_item: @portofolio_item%>
