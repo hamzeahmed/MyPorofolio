@@ -13,15 +13,7 @@
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <div class="">
-      <div class="">
-        <%= link_to 'Home', root_path%>
-        <%= link_to 'About', about_me_path%>
-        <%= link_to 'Contact', contact_path%>
-        <%= link_to 'Blogs', blogs_path%>
-        <%= link_to 'Portofolios', portofolios_path%>
-      </div>
-    </div>
+    <%= render 'shared/nav'%>
     <% if current_user.is_a?(User)%>
       <%= link_to "logout", destroy_user_session_path, method: :delete %>
     <%else%>
