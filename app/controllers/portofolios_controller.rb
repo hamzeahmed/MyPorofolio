@@ -14,6 +14,7 @@ class PortofoliosController < ApplicationController
 
   def show
     @portofolio_item = Portofolio.find(params[:id])
+    @page_title = @portofolio_item.title
   end
 
   def create
